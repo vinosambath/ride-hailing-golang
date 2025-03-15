@@ -1,8 +1,12 @@
 package main
 
 import (
-	"cabbooking/controllers"
 	"fmt"
+	"os"
+	"os/signal"
+	"ride-hailing-golang/controllers"
+	"ride-hailing-golang/routes"
+	"syscall"
 )
 
 /*
@@ -37,11 +41,16 @@ func main() {
 	_ = rHandler.AddRider("rider1", "rider1")
 	_ = cHandler.AddCab("cab1", "cab1")
 	_ = cHandler.UpdateCabAvailability("cab1", true)
+	routes.InitRouter()
 	err := rHandler.Book("rider1", 0, 0, 0, 0)
 	if err != nil {
 		fmt.Println(err)
 	}
 
 	fmt.Println("Hello and welcome!")
+
+	sigChan := make(chan os.Signal, 1)
+	signal.Notify(sigChan, syscall.SIGINT, syscall.SIGTERM)
+	<-sigChan
 
 }

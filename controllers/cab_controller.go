@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"cabbooking/models"
-	"cabbooking/services"
+	"ride-hailing-golang/models"
+	"ride-hailing-golang/services"
 )
 
 type ICabController interface {

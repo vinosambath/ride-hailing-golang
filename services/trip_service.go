@@ -1,9 +1,9 @@
 package services
 
 import (
-	"cabbooking/models"
-	"cabbooking/strategy"
 	"fmt"
+	"ride-hailing-golang/models"
+	"ride-hailing-golang/strategy"
 	"sync"
 )
 

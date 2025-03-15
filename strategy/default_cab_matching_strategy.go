@@ -1,8 +1,8 @@
 package strategy
 
 import (
-	"cabbooking/models"
 	"fmt"
+	"ride-hailing-golang/models"
 )
 
 type DefaultCabMatchingStrategy struct{}

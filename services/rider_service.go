@@ -1,8 +1,8 @@
 package services
 
 import (
-	"cabbooking/models"
 	"errors"
+	"ride-hailing-golang/models"
 	"sync"
 )
 

@@ -1,6 +1,6 @@
 package strategy
 
-import "cabbooking/models"
+import "ride-hailing-golang/models"
 
 type DefaultPricingStrategy struct{}
 

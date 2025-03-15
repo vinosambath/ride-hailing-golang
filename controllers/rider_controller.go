@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"cabbooking/models"
-	"cabbooking/services"
-	"cabbooking/strategy"
+	"ride-hailing-golang/models"
+	"ride-hailing-golang/services"
+	"ride-hailing-golang/strategy"
 )
 
 type IRiderController interface {
